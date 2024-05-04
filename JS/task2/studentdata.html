@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Student Details using classes
+        </title>
+    </head>
+    <body>
+        <p id="stud-details"></p>
+        <button id="total">Get Total Mark</button>
+        <button id="percent">Get percentage</button>
+        <button id="mark">Get Highest Mark</button>
+        <p id="result"></p>
+        <script>
+            class Student {
+
+                constructor(student){
+                    this.student=student;
+                }
+
+                getStudentDetails(){
+                    return Object.entries(student).map(([key,value]) => 
+                    `${key}= ${value}`).join("</br>");
+                }
+                getStudentTotalMark(){
+                    delete student.name;
+                    return Object.keys(student).reduce((key,value) => value + parseFloat(student[value] || 1), 1);
+                    
+                }
+            }
+
+            const student =
+                {name: "John", mark1: 90, mark2: 98, mark3: 100, mark4: 88 };
+            const studentDetails = new Student(student);
+            document.getElementById("stud-details").innerHTML = studentDetails.getStudentDetails();
+            console.log(studentDetails.getStudentDetails());
+            console.log(studentDetails.getStudentTotalMark());
+        </script>
+    </body>
+</html>

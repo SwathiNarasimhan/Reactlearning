@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Receive a day</title>
+          
+    </head>
+    <body>
+        <div class="day_holder">
+            <h3></h3>
+            <input id="rev-day" type="text" placeholder="Enter a Day"/>
+            <button id="daysubmit">Check Day</button>
+            <p id="text"></p>
+        </div>
+    </body>
+    <script>
+        //IF else
+        
+        document.getElementById('daysubmit').addEventListener("click",()=>{
+            let text;
+            let inDay= document.getElementById('rev-day').value;
+            inDay = inDay.toLowerCase();
+            switch(inDay){
+                case "monday":
+                text="Start of the week";
+                break;
+                case "tuesday":
+                text="Second day of the week";
+                break;
+                case "wednesday":
+                text="Mid day of the week";
+                break;
+                case "thursday":
+                text="Nearing Weekend";
+                break;
+                case "friday":
+                text="Last day of the week";
+                break;
+                default:
+                text="None of the day";
+            }
+            // if(inDay=="monday"){
+            //     text="Start of the week";
+            // }else if(inDay=="tuesday"){
+            //     text="Second day of the week";
+            // }else if(inDay=="wednesday"){
+            //     text="Mid day of the week";
+            // }else if(inDay=="thursday"){
+            //     text="Nearing Weekend";
+            // }else if(inDay=="friday"){
+            //     text="Last day of the week";
+            // }else{
+            //     text="None of the day";
+            // }
+            document.getElementById('text').innerHTML=text;
+        });
+    </script>
+</html>

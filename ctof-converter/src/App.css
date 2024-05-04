@@ -1,0 +1,25 @@
+.tempContainer {
+  width: 40%;
+  background: #000;
+  display: flex;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+  margin: 30px auto;
+  flex-wrap: wrap;
+}
+.tempContainer label {
+  width: 100%;
+  display: inline-block;
+  margin: 10px;
+}
+.tempContainer input {
+  margin-left: 10px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: none;
+}
+.tempContainer .boilingValue, .tempContainer .temperatureWrap {
+  width: 100%;
+}

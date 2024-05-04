@@ -1,0 +1,121 @@
+*,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.todo_holder {
+    width: 500px;
+    text-align: center;
+    margin: 30px auto;
+    height: auto;
+    background: #eee;
+    padding: 30px;
+}
+ul li input[type=text] {
+    display: none;
+}
+ul li.editMode input[type=text] {
+    display: block;
+}
+ul li.editMode label {
+    display: none;
+}
+.todo-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+.todo_holder h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.add-todo {
+    position: relative;
+    width: 100%;
+}
+.add-todo input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #c6c6c6;
+    background: #eee;
+    padding: 20px;
+}
+.add-todo button {
+    height: 41px;
+    padding: 0 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: #000;
+    color: #fff;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+.todo-list {
+    margin-top: 20px;
+    text-align: left;
+}
+.todo-list ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom:1px solid #eee ;
+}
+.todo-list ul {
+    background: #fff;
+}
+.todo-list ul li input {
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    border: 1px solid #000;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.todo-list ul li label {
+    font-size: 16px;
+    font-weight: 500;
+    width: 50%;
+    transition: ease-out 4s;
+}
+.todo-list ul li button {
+    font-size: 14px;
+    padding: 5px 14px;
+    border-radius: 0;
+    border: 1px solid #c4c4c4;
+    background: #c4c4c4;
+}
+#task-done li input{
+    position: relative;
+}
+#task-done li input:after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    position: absolute;
+    left: 2px;
+    right: 0;
+    font-size: 16px;
+}
+#task-done li label {
+    text-decoration: line-through;
+}
+li.editMode input[type=text] {
+    width: 50%;
+    height: 30px;
+    padding: 10px;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: ease-in 5s;
+}
+.todo-list ul li button:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,20%);
+}
+@media screen and (max-width:767px) {
+    .todo_holder {
+        width: 100%;
+    }
+}

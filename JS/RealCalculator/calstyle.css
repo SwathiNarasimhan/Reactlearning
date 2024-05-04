@@ -1,0 +1,73 @@
+.cal-holder {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.cal-holder .container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 10px rgba(0,0,0,20%);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cal-result .cal-in {
+    border: 1px solid #ebeaea;
+    padding: 20px 20px;
+    height: 30px;
+    font-size: 24px;
+    text-align: right;
+}
+.cal-holder ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+}
+.cal-holder ul li {
+    width: 33.3333%;
+    background: #eee;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.cal-holder ul li:hover,.right-wrap:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,12%);
+}
+.cal-result {
+    width: 100%;
+}
+.cal-opt {
+    width: 100%;
+}
+.left-wrap {
+    width: 80%;
+}
+.right-wrap {
+    width: 18%;
+    background: #000;
+    margin: auto 0 auto 2%;
+    height: 217px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.right-wrap .equals {
+    height: 217px;
+    vertical-align: middle;
+    align-content: center;
+}
+@media screen and (max-width:767px) {
+    .cal-holder .container {
+        width: 100%;
+    }
+}

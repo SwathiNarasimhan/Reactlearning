@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maps and Set</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="stud-reg-wrap">
+                <h1>
+                    Student Registry
+                </h1>
+                <ul>
+                    <li>
+                        Name: <input id="studname" type="text" name="name">
+                    </li>
+                    <li>
+                        Mark: <input id="studmark" type="number" name="Mark">
+                    </li>
+                    <li>
+                        <button onClick=StudData()>Add</button>
+                    </li>
+                </ul>
+                <table>
+                    <thead>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Mark</th>
+                    </thead>
+                    <tbody id="studTable">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            const studreg = new Map();
+            function StudData(){
+                const name = document.getElementById('studname').value;
+                const mark = document.getElementById('studmark').value;
+                studreg.set(name,mark);
+                console.log(studreg);
+                document.getElementById('studname').value='';
+                document.getElementById('studmark').value='';
+                let slno=1;
+                document.getElementById('studTable').innerHTML=``;
+                studreg.forEach(function(value,key){
+                    let tableRow = document.createElement('tr');
+                    tableRow.innerHTML=`
+                    <td>${slno}</td>
+                    <td>${name}</td>
+                    <td>${mark}</td>
+                    `;
+                    document.getElementById('studTable').appendChild(tableRow);
+                    slno++;
+                }) 
+
+            }
+        </script>
+    </body>
+</html>

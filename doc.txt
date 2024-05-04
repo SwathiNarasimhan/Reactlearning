@@ -1,0 +1,13 @@
+
+Recordings:
+https://www.youtube.com/playlist?list=PLAPKYOYqsepnKy1x8266jaw6ghNsyGzzi
+
+Presentation:
+https://docs.google.com/presentation/d/16IXq7_WQhkmSpl2M3WjUm-tOeQh6PTEFbrEtuEBhxJY/edit?usp=sharing
+
+https://teams.microsoft.com/l/meetup-join/19%3Ameeting_YzM1MDcyMjUtZDRmZi00NDVhLTk5MWMtZTY1NDA0Mzk1MDBh%40thread.v2/0?context=%7B%22Tid%22%3A%22decc58d2-df1d-4d07-9d86-ad6b884c13b3%22%2C%22Oid%22%3A%22f26efe05-685a-4695-ac58-28bae63ea1d0%22%2C%22MessageId%22%3A%220%22%7D
+
+//Create react using vite
+ ==== npm create vite@latest
+
+https://swathinarasimhan.github.io/JSTask/TodoList/JStodo.html
